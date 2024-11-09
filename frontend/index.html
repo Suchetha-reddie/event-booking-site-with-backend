@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Booking</h1>
+        <p>Book your spot for upcoming events!</p>
+    </header>
+
+    <section id="event-list">
+        <h2>Available Events</h2>
+        <ul id="events">
+            <!-- Event items will be dynamically populated here -->
+        </ul>
+    </section>
+
+    <section id="booking-form">
+        <h2>Book an Event</h2>
+        <form id="eventBookingForm">
+            <label for="event">Select Event:</label>
+            <select id="eventSelect" required>
+                <option value="">Choose an event</option>
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
